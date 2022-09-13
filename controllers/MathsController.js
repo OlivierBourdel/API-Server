@@ -18,7 +18,7 @@ module.exports =
             // }
             // else
             //     this.HttpContext.response.notImplemented();
-            this.HttpContext.response.JSON(id);
+            this.HttpContext.response.accepted();
         }
         post(data) {
             if (this.repository != null) {
