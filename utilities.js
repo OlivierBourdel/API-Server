@@ -43,6 +43,11 @@ function secondsToDateString(dateInSeconds, localizationId = 'fr-FR') {
     return new Date(dateInSeconds * 1000).toLocaleDateString(localizationId, hoursOptions);
 }
 
+exports.isNullOrEmpty = isNullOrEmpty;
+function isNullOrEmpty(string){
+    return string == null || string == "" || string == undefined;
+}
+
 /////////////////////////////////////////////////////////////////////
 // this function decompose url path
 // either
